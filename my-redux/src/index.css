@@ -1,21 +1,23 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ul {
+  display: inline-flex;
+    flex-direction: column;
+    background-color: rgb(30, 64, 255);
+    padding: 5px 7px;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li{
+    background-color: #f1f1f1;
+    margin: 5px;
+    list-style: none;
+    padding: 1em;
 }
-.flex-container > div {
-  width: 15%;
-  margin: 10px;
-  text-align: center;
-}
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.MyBorder{
+    padding: 10px 10px;
+    border: 10px solid;
+}   
+ .MyBorder-green{
+    border-color: green;  
+      display: inline-flex;
 }

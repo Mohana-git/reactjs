@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.flex-container > div {
+  width: 15%;
+  margin: 10px;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
