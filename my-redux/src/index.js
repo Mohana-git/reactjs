@@ -37,14 +37,15 @@ const App =() =>{
     const dispatch = useDispatch()
 
     useEffect( () =>{
-        dispatch( getTodo() )
+       setTimeout( ()=>
+        dispatch( getTodo() ),5000);
     }, [dispatch] 
     )
 
    return( 
     <ErrorBoundary FallbackComponent = {ErrorFallback} onReset={() => {  }}>
     <MyBorder color="green"><ul>
-    {loading ? "Loading..." : error ? error.message : todos.map(item => {  
+    {loading ? <h1 className="Loading">Loading...</h1> : error ? error.message : todos.map(item => {  
                         return <li key={item.id}>  
                             {item.title}</li>                             
                     })}</ul>
