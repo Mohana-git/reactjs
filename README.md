@@ -4,5 +4,5 @@ reactjs - consists simple React App
         
 my-redux - Simple React redux application
 - Api Data fetching using Redux Hooks 
-Api Data fetching using class components 
-Simple Login logout page
+- Api Data fetching using class components 
+- Simple Login logout page
